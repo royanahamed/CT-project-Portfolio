@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,
+a:focus,
+a:active{
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover{
+    text-decoration: none;
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-bottom: 15px;
+}
+body{
+	margin-top:70px;
+}
+
+/*=================| Start header css |================*/
+/*=================| End header css |================*/
+#top-menu{
+  background: #fff;
+  box-shadow: 0 1px 3px -1px #ddd;
+  padding: 10px 0;
+  transition:all 0.5s ease 0s;
+}
+#top-menu.show {
+  padding: 0;
+}
+#top-menu .navbar-brand{
+	color:#000;
+	font-size:24px;
+	font-weight:bold;
+}
+
+#top-menu{
+
+}
+#top-menu ul.nav{}
+#top-menu ul.nav li{
+    position: relative;
+    transition: all .3s ease 0s;
+    margin: 0 5px;
+}
+#top-menu ul.nav li::before{
+    position: absolute;
+    width: 0;
+    height: 3px;
+    content: '';
+    background: #BABABA;
+    left: 0;
+    bottom:5px;
+    z-index: 1;
+    -webkit-transition: all .3s ease 0s;
+       -moz-transition: all .3s ease 0s;
+         -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+}
+#top-menu ul.nav li:hover::before{
+    width: 100%;
+}
+#top-menu ul.nav li.active::before{
+    background: #2AA8DF;
+    width: 100%;
+}
+#top-menu ul.nav li::after{
+    background: #fff;
+    border-bottom: 3px solid #BABABA;
+    border-right: 3px solid #BABABA;
+    bottom: 1px;
+    content: "";
+    height: 10px;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    -webkit-transition: all .3s ease 0s;
+       -moz-transition: all .3s ease 0s;
+         -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+    transform: rotate(45deg) scale(0);
+    width: 10px;
+    z-index: 2;
+}
+#top-menu ul.nav li:hover::after{
+    transform: rotate(45deg) scale(01);
+}
+#top-menu ul.nav li.active::after{
+    border-bottom: 3px solid #2AA8DF;
+    border-right: 3px solid #2AA8DF;
+    transform: rotate(45deg) scale(01);
+}
+#top-menu ul.nav li.social-media::before,
+#top-menu ul.social-links li::before,
+#top-menu ul.nav li.social-media::after,
+#top-menu ul.social-links li::after,
+#top-menu ul.social-links li:hover::before,
+#top-menu ul.social-links li:hover::after{
+    transform: rotate(0deg) scale(0);
+}
+#top-menu ul.nav li a{
+    color: #BABABA;
+    font-weight: bold;
+    padding: 15px 10px 10px;
+    -webkit-transition: all .3s ease 0s;
+       -moz-transition: all .3s ease 0s;
+         -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+}
+#top-menu ul.nav li.active a{
+    color: #2AA8DF;
+}
+#top-menu ul.nav li a:hover,
+#top-menu ul.nav li a:focus{
+    background: transparent;
+}
+#top-menu ul.social-links{
+    margin: 15px 0 0 30px;
+}
+#top-menu ul.social-links li{
+    margin: 0;
+}
+#top-menu ul.social-links li a{
+    color: #fff;
+    width: 26px;
+    display: block;
+    height: 26px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 0;
+    padding-top: 3px;
+    opacity: 0.8;
+}
+#top-menu ul.social-links li a:hover{
+    opacity: 1;
+}
+.navbar-toggle{
+    border: 1px solid #37ADE1;
+}
+.navbar-toggle .icon-bar{
+    background:#37ADE1;
+}
+/*=================| Start slider css |================*/
+/*=================| End slider css |================*/
+.single-slider{
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+.single-slider .info{
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) ;
+}
+.single-slider .line h1{
+    color: #fff;
+    padding-bottom: 15px;
+    position: relative;
+}
+.single-slider .line h1::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: rgba(255, 255, 255, 1);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.single-slider a{
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(255,255,255,1);
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+/*=================| Start services css |================*/
+/*=================| End services css |================*/
+#services_area{
+    width: 100%;
+    padding: 50px 0 0;
+    background: #f7f7f7;
+}
+.single-services{
+    background: #fdfdfd;
+    padding: 50px 15px 15px ;
+    box-shadow: 0 1px 2px -1px lightgray;
+    min-height: 250px;
+    color: gray;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    margin-bottom: 15px;
+}
+.single-services i{
+    color: #2AA8DF;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 100%;
+    border: 1px solid #F7F8F9;
+    line-height: 100px;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.single-services h3{
+    font-size: 20px;
+}
+.single-services:hover{
+    background: #2AA8DF;
+    color: #94D3EF;
+}
+.single-services:hover i{
+    background: #2AA8DF;
+    color: #94D3EF;
+    border: 1px solid #94D3EF;
+}
+/*=================| Start portfolio css |================*/
+/*=================| End portfolio css |================*/
+#portfolio_area{
+    width: 100%;
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+#portfolio_area .title{
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+#portfolio_area .title::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: gray;
+    bottom: 0;
+
+}
+#portfolio_area .carousel{
+
+}
+#portfolio_area .carousel .caption{
+    background: #fdfdfd;
+    padding: 15px 15px 5px ;
+    box-shadow: 0 1px 2px -1px lightgray;
+    margin-bottom: 5px;
+}
+#portfolio_area .carousel .controls{
+    position: absolute;
+    top: -35px;
+    right: 0;
+}
+#portfolio_area .carousel .controls a{
+    width: 27px;
+    display: inline-block;
+    text-align: right;
+}
+#portfolio_area .carousel .item .caption{
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+#portfolio_area .carousel .item a:hover .caption{
+    background: #2AA8DF;
+    color: #fff;
+}
+
+
+/*=================| Start about css |================*/
+/*=================| End about css |================*/
+#about_area{
+    width: 100%;
+    padding: 15px 0 50px 0;
+    background: #FBFBFB;
+}
+#about_area .title{
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+#about_area .title::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: gray;
+    bottom: 0;
+
+}
+#about_area .expertise > .row{
+    margin: 0;
+}
+#about_area .expertise .row .col-md-4{
+    padding: 2px;
+}
+/*=================| Start testimonial css |================*/
+/*=================| End testimonial css |================*/
+#testimonial_area{
+    width: 100%;
+    padding: 50px 0
+}
+#testimonial_area .single-testimonial{
+    text-align: center;
+}
+#testimonial_area .single-testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: inline-block;
+}
+/*=================| Start contact css |================*/
+#contact_area{
+    width: 100%;
+    padding: 25px 0;
+    background: #fbfbfb;
+    color: gray;
+}
+#contact_area a{
+    color: #B1B1B3;
+}
+#contact_area a:hover{
+    color: #2AA8DF;
+}
+#contact_area .social-links a{
+    background: #4862A3;
+    width: 26px;
+    display: block;
+    height: 26px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 100px;
+    color: #fff;
+}
+#contact_area .form-group {
+    margin-bottom: 10px;
+}
+#contact_area .form-control {
+    border: 1px solid #FBFBFB;
+     border-radius: 0;
+     -webkit-box-shadow: 0 0 0 0 transparent;
+     box-shadow:  0 0 0 0 transparent;
+    -webkit-transition: all 0.3s ease-in-out .15s;
+    -o-transition: all 0.3s ease-in-out .15s;
+    transition: all 0.3s ease-in-out .15s;
+    margin-bottom: 5px;
+}
+#contact_area select.form-control {
+    margin-bottom: 10px;
+}
+#contact_area textarea.form-control {
+    margin-bottom: 10px;
+}
+#contact_area .my-services ul li a{
+    color: #B1B1B3;
+    padding: 7px 0;
+    display: block;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+#contact_area .my-services ul li a:hover{
+    color: #2AA8DF;
+    padding-left: 2px;
+}
+/*=================| End contact css |================*/
+
+
+/*=================| Start footer css |================*/
+footer{
+    padding: 20px 0 15px;
+}
+footer .footer-menu{
+
+}
+footer .footer-menu ul li a{
+    color: #BABABA;
+    font-weight: bold;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+footer .footer-menu ul li a:hover{
+    color: #5BC0DE;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+    color: #BABABA;
+    font-weight: bold;
+}
+footer p > a{
+    color: #5BC0DE;
+}
+/*=================| End footer css |================*/
+
+/*=================| Start scroll-top css |================*/
+.scroll-top-wrapper {
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+	background-color: #94D3EF;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background: #2AA8DF;
+    opacity: 1;
+}
+.scroll-top-wrapper.show {
+	visibility:visible;
+	cursor:pointer;
+	opacity:1;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+
+/*=================| End scroll-top css |================*/
+/*=================| start theme-shahali css |================*/
+.owl-carousel.theme-shahali{}
+.owl-carousel.theme-shahali .owl-controls.clickable{}
+.owl-carousel.theme-shahali .owl-controls.clickable .owl-buttons{
+
+}
+.owl-carousel.theme-shahali .owl-controls.clickable .owl-buttons div{top: 50%;
+    position: absolute;
+    color: rgba(255,255,255, 0.6);
+    transform: translateY(-50%);
+    font-size: 100px;
+}
+.owl-carousel.theme-shahali .owl-controls.clickable .owl-buttons div.owl-prev{
+    left: 8%;
+}
+.owl-carousel.theme-shahali .owl-controls.clickable .owl-buttons div.owl-next{
+    right: 8%;
+}
+
+/*=================| End theme-shahali css |================*/
+
+
+
